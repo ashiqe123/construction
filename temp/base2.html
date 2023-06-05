@@ -16,7 +16,7 @@
     <title>Document</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-    *{
+        *{
     font-family: 'Poppins', sans-serif;
     margin:0; padding: 0;
     box-sizing: border-box;
@@ -129,7 +129,7 @@
   }
 
   .zoom-image:hover {
-    transform: scale(1.07);
+    transform: scale(1.1);
   }
   .zoom-text {
     transition: background-color 0.3s, transform 0.3s;
@@ -138,7 +138,7 @@
   }
 
   .zoom-text:hover {
-    transform: scale(1.07);
+    transform: scale(1.1);
     background-color: black;
     color: white;
     opacity: 0.9;
@@ -147,9 +147,6 @@
   .stars{
     color: rgb(15, 212, 163);
   }
-
-
-  
     </style>
     
     
@@ -181,7 +178,7 @@
               </li>
               
             <li class="nav-item">
-              <a class="nav-link " href="{% url 'log' %}">Login</a>
+              <a class="nav-link " href="{% url 'lgout' %}">Logout</a>
             </li>
           </ul>
         </div>

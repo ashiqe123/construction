@@ -11,10 +11,11 @@
     background-color: #f2f2f2;
   }
   form {
+    
     max-width: 600px;
-    margin: 0 auto;
+    margin:10rem auto ;
     background-color: #fff;
-    padding: 40px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     animation: form-animation 1s ease-out;
@@ -37,12 +38,12 @@
   label {
     display: block;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-top: 10px;
   }
   input[type="text"], input[type="password"], input[type="email"] {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 7px;
+    margin-bottom: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -69,7 +70,7 @@
   }
 </style>
 </head>
-<body style="background-image: url(https://media.istockphoto.com/id/1340117122/photo/cube-with-shopping-trolley-symbol-on-the-laptop-keyboard.jpg?b=1&s=170667a&w=0&k=20&c=PU8iTTvTj6TV6_Quy9Z7KQJoOgY-rp_rqI9FbFNFYEw=);background-repeat: no-repeat;background-size: cover;">
+<body style="background-image: url(https://as1.ftcdn.net/v2/jpg/00/35/93/70/1000_F_35937002_3JdxS6GOSnSqHCKYYVlKUraqbF70dXzW.jpg);background-repeat: no-repeat;background-size: cover;">
 <form>
   <h1>Create your account</h1>
   <label for="fullname">Full Name:</label>
@@ -81,7 +82,8 @@
   <label for="confirm-password">Confirm Password:</label>
   <input type="password" id="confirm-password" name="confirm-password" required>
  
-  <button type="submit">Register</button>
+  <a href="{% url 'log' %}" class="btn btn-primary" style="background-color: black;color:rgb(15, 212, 163) ;">Register</a>
+
  <p>Already have an account ? <a href="{% url 'log' %}">Login</a></p>
 </form>
 
